@@ -1,0 +1,8 @@
+prefix=/home/zhibei/workspace/ros-tutorial/devel
+
+Name: tutorials
+Description: Description of tutorials
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/zhibei/workspace/ros-tutorial/devel/lib 
+Requires: 
