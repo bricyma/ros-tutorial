@@ -1,2 +1,0 @@
-tutorials
--DCATKIN_DEVEL_PREFIX=/home/zhibei/workspace/ros-tutorial/devel -DCMAKE_INSTALL_PREFIX=/home/zhibei/workspace/ros-tutorial/install -G Unix Makefiles
