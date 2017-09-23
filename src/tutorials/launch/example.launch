@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<launch>
+  <arg name="yaw_angle_offset" default="0"/>
+
+  <node pkg="tutorials" name="param" type="param.py" >
+      <param name="yaw_angle_offset" value="$(arg yaw_angle_offset)"/>
+  </node>
+</launch>
+
