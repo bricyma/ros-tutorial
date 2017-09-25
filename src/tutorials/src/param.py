@@ -11,13 +11,14 @@ class testParam:
         self.srv = Server(gpsConfigConfig, self.reconfigure)
 
     def reconfigure(self, config, level):
-        self.offset = config.yaw_offset
+        if config.enable_calibrate:
+	    self.offset = config.yaw_offset
         print 'offset: ', self.offset
         return config
 
 
 if __name__ == "__main__":
     print 'start param test'
-    rospy.init_node('esr_interface', anonymous=True)
+    rospy.init_node('esr_interface', anonymous=False)
     _ = testParam()
     rospy.spin()
